@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de contacto</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		input[type=text], input[type=email], textarea {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			resize: vertical;
+        }
+
+        input[type=password], input[type=password], textarea {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			resize: vertical;
+		}
+
+        input[type=tel], input[type=tel], textarea {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			resize: vertical;
+        }
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+        
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form action="/submit-form" method="POST">
+			<label for="name">Nombre:</label>
+			<input type="text" id="name" name="name" placeholder="Tu nombre..." required>
+
+            <label for="usuario">usuario:</label>
+			<input type="text" id="usuario" name="usuario" placeholder="jhon123" required>
+
+			<label for="email">Correo electrónico:</label>
+			<input type="email" id="email" name="email" placeholder="Tu correo electronico..." required>
+
+            <label for="password">Contraseña:</label>
+			<input type="password" id="password" name="password" required>
+
+            <label for="password2">Repetir Contraseña:</label>
+			<input type="password" id="password2" name="password2" required>
+
+            <label for="telefono">Telefono:</label>
+			<input type="tel" id="telefono" name="telefono" placeholder="542392123456" required>
+
+
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+</body>
+</html>
